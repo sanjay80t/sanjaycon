@@ -65,7 +65,7 @@ def seed():
             bookings.append(booking)
         db.session.add_all(bookings)
         db.session.commit()
-        print(f"✓ Seeded {len(rooms)} rooms, {len(employees)} employees, {len(bookings)} bookings")
+        print(f"Seeded {len(rooms)} rooms, {len(employees)} employees, {len(bookings)} bookings")
 
 if __name__ == '__main__':
     seed()
